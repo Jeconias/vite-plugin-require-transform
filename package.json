@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "ts-node __test__/index.ts",
-    "build": "rm -rf dist &&  tsc",
+    "build": "rm -rf dist && tsc",
+    "prepare": "yarn build",
     "ver": "npm version patch",
     "pub": "npm run build && npm run ver && npm publish"
   },
